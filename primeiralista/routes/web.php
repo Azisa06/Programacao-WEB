@@ -3,17 +3,6 @@
 use Illuminate\Support\Facades\Route;
 use illuminate\Http\Request;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider and all of them will
-| be assigned to the "web" middleware group. Make something great!
-|
-*/
-
 Route::get('/', function () { //route:: significa que o método é estático
     return view('welcome');
 });
@@ -31,4 +20,16 @@ Route::post('/exer1resp', function(Request $request){ //request é usado quando 
     $valor2 = intval($request->input('valor2'));
     $soma = $valor1 + $valor2;
     return view('exer1', compact('soma')); //compact transforma as variáveis em arrays, passando apenas seu nome
+});
+
+Route::get('/ex1', function(){
+    return view('lista.ex1');
+});
+
+Route::post('/listaex1', function(Request $request){
+    $nota1 = floatval($request->input('nota1'));
+    $nota2 = floatval($request->input('nota2'));
+    $nota3 = floatval($request->input('nota3'));
+    $media = ($nota1 + $nota2 + $nota3) / 3;
+    return view('lista1.ex1', compact('media'));
 });
