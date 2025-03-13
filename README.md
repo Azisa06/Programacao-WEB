@@ -24,7 +24,7 @@ Os exercícios abordam conceitos fundamentais da linguagem PHP, incluindo:
 
 ## 📄 Exercícios Disponíveis
 
-### ✅ Lista de Exercícios 1 (Exercícios Básicos)
+### ✅ Lista de Exercícios 1
 
 1. Criar um formulário para inserir três notas e calcular a **média**.
 2. Criar um formulário para inserir uma temperatura em **Celsius** e convertê-la para **Fahrenheit**.
@@ -44,7 +44,7 @@ Os exercícios abordam conceitos fundamentais da linguagem PHP, incluindo:
 
 ---
 
-### ⚡ Lista de Exercícios 2 (Exercícios com Lógica de Programação e Controllers)
+### ⚡ Lista de Exercícios 2 (usando Controllers)
 
 1. Criar um programa que receba **dois valores** e retorne a **soma**. Se forem iguais, retornar o **triplo** da soma.
 2. Criar um programa para receber os valores **A e B** e exibi-los em **ordem crescente**. Se forem iguais, exibir apenas um deles.
