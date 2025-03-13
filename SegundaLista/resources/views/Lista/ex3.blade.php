@@ -11,13 +11,15 @@
         <input type="number" id="valor" name="valor" class="form-control" required="">
     </div>
     
-    <button type="submit" class="btn btn-primary">Enviar</button>
+    <div class="mb-3">
+        <button type="submit" class="btn btn-primary">Enviar</button>
+    </div>
 </form>
 
-    @if(isset($novoValor))
-        <p>Valor com desconto de 15% = R${{ $novoValor }}</p>
+    @if(isset($novoValor, $valor))
+        <p>R${{ $valor }} com desconto de 15% = R${{ $novoValor }}</p>
         @else
-            <p>O valor continua o mesmo = R${{ $valor }}</p>
+            <p>Não há descontos para este valor!</p>
     @endif
             
 @endsection

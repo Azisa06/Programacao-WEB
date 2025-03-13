@@ -3,9 +3,9 @@
 
 @section('conteudo')
 
-<form method="post" action="/ex5resp">       
+<form method="post" action="/ex6resp">       
     @csrf 
-    <h5>Informe um número de um mês.</h5>   
+    <h5>Informe um número e será mostrado de 1 até o valor informado.</h5>   
     <div class="mb-3">
         <label for="numero" class="form-label">Informe um número:</label>
         <input type="number" id="numero" name="numero" class="form-control" required="">
@@ -16,8 +16,8 @@
     </div>
 </form>
 
-    @isset($mes)
-        <p>{{ $numero }} = {{ $mes }}</p>
+    @isset($numeros)
+        <p>{{ $numeros }}</p>
     @endisset
             
 @endsection

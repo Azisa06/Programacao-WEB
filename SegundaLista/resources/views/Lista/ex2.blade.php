@@ -16,7 +16,9 @@
         <input type="number" id="valorB" name="valorB" class="form-control" required="">
     </div>
     
-    <button type="submit" class="btn btn-primary">Enviar</button>
+    <div class="mb-3">
+        <button type="submit" class="btn btn-primary">Enviar</button>
+    </div>
 </form>
 
     @isset($iguais)

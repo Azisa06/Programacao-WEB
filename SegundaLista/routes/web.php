@@ -17,3 +17,18 @@ Route::post ('/ex4resp', [ExerciciosController::class, 'respostaEx4']);
 
 Route::get('/ex5', [ExerciciosController::class, 'abrirFormEx5']);
 Route::post ('/ex5resp', [ExerciciosController::class, 'respostaEx5']);
+
+Route::get('/ex6', [ExerciciosController::class, 'abrirFormEx6']);
+Route::post ('/ex6resp', [ExerciciosController::class, 'respostaEx6']);
+
+Route::get('/ex7', [ExerciciosController::class, 'abrirFormEx7']);
+Route::post ('/ex7resp', [ExerciciosController::class, 'respostaEx7']);
+
+Route::get('/ex8', [ExerciciosController::class, 'abrirFormEx8']);
+Route::post ('/ex8resp', [ExerciciosController::class, 'respostaEx8']);
+
+Route::get('/ex9', [ExerciciosController::class, 'abrirFormEx9']);
+Route::post ('/ex9resp', [ExerciciosController::class, 'respostaEx9']);
+
+Route::get('/ex10', [ExerciciosController::class, 'abrirFormEx10']);
+Route::post ('/ex10resp', [ExerciciosController::class, 'respostaEx10']);

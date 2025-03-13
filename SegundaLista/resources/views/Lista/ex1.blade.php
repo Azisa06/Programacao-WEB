@@ -16,15 +16,17 @@
         <input type="number" id="valor2" name="valor2" class="form-control" required="">
     </div>
     
-    <button type="submit" class="btn btn-primary">Enviar</button>
+    <div class="mb-3">
+        <button type="submit" class="btn btn-primary">Enviar</button>
+    </div>
 </form>
 
-    @isset($soma) <!--verificando se a variável soma existe-->
-        <p>O valor da soma é {{ $soma }}</p>
-    @endisset
+    @if(isset($soma, $valor1, $valor2)) <!--verificando se a variável soma existe-->
+        <p>Soma dos dois valores: {{ $valor1 }} + {{ $valor2 }} = {{ $soma }}</p>
+    @endif
 
-    @isset($triplo)
-        <p>O triplo da soma é {{ $triplo }}</p>
-    @endisset
+    @if(isset($triplo, $soma))
+        <p>Triplo da soma: {{ $soma }} x 3 = {{ $triplo }}</p>
+    @endif
             
 @endsection
